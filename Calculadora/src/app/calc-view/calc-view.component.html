@@ -1,0 +1,13 @@
+
+<main class="contenedor_principal">
+    <div class="contenedor">
+        <h2 class="titulo">Calculadora</h2>
+        <p>Valor 1</p>
+        <input type="number" placeholder="Ingrese el primer valor" (input)="primerValor($event)" id="primerInput">
+        <p>Valor 2</p>
+        <input type="number" placeholder="Ingrese el segundo valor" (input)="segundoValor($event)" id="segundoInput">
+        <p>Resultado</p>
+        <input type="number" [value]="resultado" disabled>
+        <app-calc-actions [valorRecibido]="valores" (selected)="mandar($event)"></app-calc-actions>
+    </div>
+</main>

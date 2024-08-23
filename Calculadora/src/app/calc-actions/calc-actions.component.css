@@ -1,0 +1,9 @@
+.botones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+button {
+    padding: 15px;
+}
